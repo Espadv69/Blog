@@ -9,3 +9,31 @@ body {
     background-color: #151E21;
     font-family: 'Fira Code', monospace, sans-serif;
 }
+
+.grid {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "aside main main"
+    "footer footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.grid aside {
+    grid-area: aside;
+    background-color: #1E2A30;
+    padding: 20px;
+}
+
+.grid main {
+    grid-area: main;
+    padding: 20px;
+}
+
+.grid footer {
+    grid-area: footer;
+    background-color: #1E2A30;
+    padding: 20px;
+}
