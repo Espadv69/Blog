@@ -7,7 +7,7 @@
 
 body {
     color: white;
-    background-color: #151E21;
+    background-color: #0f1517;
     font-family: 'Fira Code', monospace, sans-serif;
 }
 /*********/
@@ -25,7 +25,7 @@ body {
 }
 
 .a {
-    color: #ffffffab;
+    color: #ffffff;
     text-decoration: none;
     background-color: #ffffff40;
     border-radius: 1rem;
@@ -55,7 +55,7 @@ body {
 }
 
 .grid aside li a {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     place-content: center;
     width: 100%;
@@ -135,7 +135,6 @@ body {
     background-color: #1E2A30;
     padding: .5rem;
     gap: 5px;
-    box-shadow: inset -1px -1px 5px rgba(0, 0, 0, .5), 1px 1px 5px rgba(0, 0, 0, .5);
 }
 
 .grid footer p {
