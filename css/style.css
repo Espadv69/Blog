@@ -25,7 +25,7 @@ body {
 }
 
 .a {
-    color: #ff0000ab;
+    color: #ffffffab;
     text-decoration: none;
     background-color: #ffffff40;
     border-radius: 1rem;
@@ -33,7 +33,7 @@ body {
 }
 
 .a:hover {
-    color: #ff0000;
+    color: #000000;
 }
 
 /*GRID ASIDE*/
