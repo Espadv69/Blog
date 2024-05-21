@@ -25,10 +25,15 @@ body {
 }
 
 .a {
-    color: rgb(0, 0, 0);
+    color: #ff0000ab;
     text-decoration: none;
     background-color: #ffffff40;
     border-radius: 1rem;
+    z-index: 1;
+}
+
+.a:hover {
+    color: #ff0000;
 }
 
 /*GRID ASIDE*/
