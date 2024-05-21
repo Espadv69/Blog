@@ -168,8 +168,14 @@ body {
     .grid aside {
         grid-area: aside;
         background-color: #1E2A30;
-        padding: .5rem;
-        gap: 5px;
+        padding: 1rem;
+        gap: 7px;
+        border-radius: 0;
+    }
+
+    .grid aside li a {
+        padding: 1rem;
+        font-size: 18px;
     }
 
     .grid main {
