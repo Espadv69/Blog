@@ -17,23 +17,35 @@ body {
     grid-template-areas: 
     "aside main main"
     "footer footer footer";
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 150px 1fr;
     grid-template-rows: 1fr auto;
 }
 
 .grid aside {
     grid-area: aside;
     background-color: #1E2A30;
-    padding: 20px;
+    padding: .5rem;
+    gap: 5px;
 }
 
 .grid main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-area: main;
-    padding: 20px;
+    padding: .5rem;
+    gap: 5px;
+}
+
+.grid main img {
+    width: 100%;
+    height: 100%;
 }
 
 .grid footer {
     grid-area: footer;
     background-color: #1E2A30;
-    padding: 20px;
+    padding: .5rem;
+    gap: 5px;
+    border: 1px solid black;
 }
