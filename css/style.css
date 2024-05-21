@@ -1,3 +1,4 @@
+/*FOR ALL*/
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,9 @@ body {
     background-color: #151E21;
     font-family: 'Fira Code', monospace, sans-serif;
 }
+/*********/
 
+/*GRID INDEX*/
 .grid {
     position: relative;
     min-height: 100vh;
@@ -26,6 +29,7 @@ body {
     background-color: #1E2A30;
     padding: .5rem;
     gap: 5px;
+    box-shadow: inset -1px -1px 5px rgba(0, 0, 0, .5), 1px 1px 5px rgba(0, 0, 0, .5);
 }
 
 .grid main {
@@ -44,7 +48,24 @@ body {
     box-shadow: inset -1px -1px 5px rgba(0, 0, 0, .5), 1px 1px 5px rgba(0, 0, 0, .5);
 }
 
-@media (max-width: 1000px) {
+.grid main p {
+    align-self: center;
+    text-align: center;
+}
+
+.grid main p span {
+    color: #FFD700;
+}
+
+.grid footer {
+    grid-area: footer;
+    background-color: #1E2A30;
+    padding: .5rem;
+    gap: 5px;
+    box-shadow: inset -1px -1px 5px rgba(0, 0, 0, .5), 1px 1px 5px rgba(0, 0, 0, .5);
+}
+
+@media (max-width: 800px) {
     .grid {
         grid-template-areas: 
         "aside"
@@ -76,10 +97,4 @@ body {
         box-shadow: inset -1px -1px 5px rgba(0, 0, 0, .5), 1px 1px 5px rgba(0, 0, 0, .5);
     }
 }
-
-.grid footer {
-    grid-area: footer;
-    background-color: #1E2A30;
-    padding: .5rem;
-    gap: 5px;
-}
+/************/
