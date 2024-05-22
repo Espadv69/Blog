@@ -199,6 +199,7 @@ body {
 
 .comentario {
     margin: 0 auto;
+    padding: 2rem;
     width: 100%;
     max-width: 800px;
     display: flex;
@@ -207,6 +208,7 @@ body {
 }
 
 .comentario input {
+    outline: none;
     margin: 0 auto;
     width: 30%;
     padding: 1rem;
@@ -233,4 +235,21 @@ body {
     background: transparent;
     border: 2px solid whitesmoke;
     color: whitesmoke;
+}
+
+.contenedorComentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    min-width: 400px;
+    text-align: center;
+}
+
+.contenedorComentarios h4 {
+    color: #00fffb;
+    text-decoration: underline white;
+    text-underline-offset: 3px;
 }
