@@ -9,18 +9,43 @@
         rel="stylesheet"
         href="./css/style.css"
         >
-
+        
     </head>
     <body>
-
         <h2>Comentarios</h2>
 
+        <div class="contenedorComentarios">
+            <h4>Aitor dice:</h4>
+            <p>Buen Blog</p>
+            <hr>
+
+            <h4>Adrian dice:</h4>
+            <p>Buen Blog me gusta one piece</p>
+            <hr>
+        </div>
+
+
         <section class="comentario">
-            <input type="text" placeholder="Ingrese su nombre">
-            <textarea placeholder="Ingrese su comentario" rows="6" id="myTextarea"></textarea>
-            <button>
+
+            <input
+            class="nombre"
+            type="text"
+            placeholder="Ingrese su nombre"
+            value=""
+            >
+
+            <textarea
+            class="comentarioUsuario"
+            placeholder="Ingrese su comentario"
+            rows="6"
+            id="myTextarea"
+            value=""
+            ></textarea>
+
+            <button id="boton">
                 Enviar
             </button>
+
         </section>
 
         <script src="./js/main.js"></script>
