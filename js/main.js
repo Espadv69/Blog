@@ -6,3 +6,11 @@ function autoResize() {
     this.style.height = 'auto';
     this.style.height = this.scrollHeight + 'px';
 }
+
+// FOR COMENTARIO USUARIO
+const botonComentario = document.querySelector('#boton');
+botonComentario.addEventListener('click', miComentario, false);
+
+function miComentario() {
+    
+}
