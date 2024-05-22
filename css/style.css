@@ -196,3 +196,41 @@ body {
 /***************/
 
 /*COMENTARIO*/
+
+.comentario {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comentario input {
+    margin: 0 auto;
+    width: 30%;
+    padding: 1rem;
+    font-family: 'Fira Code';
+}
+
+.comentario textarea {
+    margin: 0 auto;
+    width: 30%;
+    padding: 1rem;
+    font-family: 'Fira Code';
+}
+
+.comentario textarea {
+    overflow: hidden;
+    resize: none;
+    outline: none;
+}
+
+.comentario button {
+    margin: 0 auto;
+    width: 15%;
+    padding: .8rem;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
