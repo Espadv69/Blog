@@ -201,7 +201,6 @@ h2 {
 /***************/
 
 /*COMENTARIO*/
-
 .comentario {
     margin: 0 auto;
     padding: 2rem;
@@ -242,6 +241,7 @@ h2 {
     color: whitesmoke;
 }
 
+/*COMENTARIO USUARIOS*/
 .contenedorComentarios {
     display: flex;
     flex-direction: column;
@@ -258,3 +258,4 @@ h2 {
     text-decoration: underline 2px white;
     text-underline-offset: 7px;
 }
+/*********************/
