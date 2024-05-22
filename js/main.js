@@ -13,6 +13,7 @@ botonComentario.addEventListener('click', miComentario, false);
 
 function miComentario() {
 
+    // Obtener los valores de los inputs
     const nombre = document.querySelector('.nombre');
     const nombreValue = nombre.value;
 
@@ -20,7 +21,8 @@ function miComentario() {
     const comentarioValue = comentario.value;
 
     if(isNaN(nombreValue) && isNaN(comentarioValue)) {
-        
+
+        // Crear elementos
         const crearElementoH4 = document.createElement('h4');
         crearElementoH4.textContent = `${nombreValue} dice:`;
         
@@ -28,12 +30,15 @@ function miComentario() {
         crearElementoP.textContent = `${comentarioValue}`;
         
         const crearElementoHr = document.createElement('hr');
-        
+
+        // Agregar los elementos al contenedor
         const contenedor = document.querySelector('.contenedorComentarios');
         contenedor.appendChild(crearElementoH4);
         contenedor.appendChild(crearElementoP); 
-        contenedor.appendChild(crearElementoHr); 
+        contenedor.appendChild(crearElementoHr);
+        
+        // Vaciar los inputs
+        nombre.value = '';
+        comentario.value = '';
     }
 }
-
-console.log(miComentario())
