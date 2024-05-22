@@ -250,6 +250,6 @@ body {
 
 .contenedorComentarios h4 {
     color: #00fffb;
-    text-decoration: underline white;
+    text-decoration: underline 2px white;
     text-underline-offset: 3px;
 }
