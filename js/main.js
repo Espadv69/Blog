@@ -24,6 +24,7 @@ function miComentario() {
     // Obtener los valores de los inputs
     const nombre = document.querySelector('.nombre');
     const nombreValue = nombre.value.trim();
+    
     const comentario = document.querySelector('#myTextarea');
     const comentarioValue = comentario.value.trim();
 
