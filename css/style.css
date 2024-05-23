@@ -9,6 +9,7 @@ body {
     color: white;
     background-color: #0f1517;
     font-family: 'Fira Code', monospace, sans-serif;
+    height: auto;
 }
 
 h2 {
@@ -206,8 +207,9 @@ h2 {
     padding: 2rem;
     width: 100%;
     max-width: 800px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     gap: 10px;
 }
 
@@ -215,7 +217,8 @@ h2 {
     border-radius: .2rem;
     outline: none;
     margin: 0 auto;
-    width: 30%;
+    width: 100%;
+    max-width: 300px;
     padding: 1rem;
     border: none;
     font-family: 'Fira Code';
@@ -225,7 +228,8 @@ h2 {
 .comentario textarea {
     border-radius: .2rem;
     margin: 0 auto;
-    width: 30%;
+    width: 100%;
+    max-width: 300px;
     padding: 1rem;
     font-family: 'Fira Code';
     overflow: hidden;
@@ -238,7 +242,8 @@ h2 {
 .comentario button {
     cursor: pointer;
     margin: 0 auto;
-    width: 15%;
+    width: 100%;
+    max-width: 200px;
     padding: .8rem;
     background: transparent;
     border: 2px solid whitesmoke;
@@ -297,7 +302,7 @@ h2 {
 
 .small-screen  {
     margin-bottom: 10px;
-    width: auto;
+    min-width: 100%;
     position: relative;
     display: none;
     padding: .5rem;
@@ -318,7 +323,7 @@ h2 {
 /******************/
 
 /*MEDIA QUERIES*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 676px) {
     .small-screen {
         display: block;
     }
