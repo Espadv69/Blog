@@ -391,6 +391,7 @@ h2 {
 
 /*AFRICA GRID*/
 .africa {
+    padding: 1rem;
     margin: auto;
     margin-bottom: 20px;
     width: 100%;
@@ -419,22 +420,43 @@ h2 {
 }
 
 .africa div:nth-child(2) {
+    padding: .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-area: secondAfrica;
-    border-top: 10px solid rgb(0, 0, 0);
+    border-top: 10px solid rgb(255, 255, 255);
     border-top-right-radius: 1rem;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 0px 10px 10px rgb(0, 0, 0, .2);
 }
 
+.africa div:nth-child(2) p {
+    margin-top: 10px;
+}
+
+.africa div:nth-child(2) p span {
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.africa div:nth-child(2) img {
+    margin-top: .8rem;
+    width: 150px;
+    height: auto;
+}
+
 .africa div:nth-child(3) {
+    padding: .5rem;
     text-align: center;
     grid-area: thirdAfrica;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top-left-radius: 1rem;
-    border-top: 10px solid whitesmoke;
-    background-color: rgba(245, 245, 245, 0.3);
+    border-top: 10px solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, .2);
 }
 
@@ -453,8 +475,8 @@ h2 {
     .africa {
         grid-template-areas: 
         "firstAfrica firstAfrica firstAfrica"
-        "secondAfrica secondAfrica secondAfrica"
         "thirdAfrica thirdAfrica thirdAfrica"
+        "secondAfrica secondAfrica secondAfrica"
         ;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 300px auto auto;
@@ -462,6 +484,11 @@ h2 {
 
     .africa div:nth-child(1) img {
         border-radius: 0;
+    }
+
+    .africa div:nth-child(2), .africa div:nth-child(3) {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
     }
 }
 /***************/
