@@ -379,3 +379,32 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 /***********/
+
+/*AFRICA*/
+.body-africa {
+    min-height: 100vh;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.65) 100%), url(../img/africa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*AFRICA GRID*/
+.africa {
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 15px;
+}
+
+.africa img {
+    width: 100%;
+    height: 100%;
+    border-radius: .3rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+/*************/
