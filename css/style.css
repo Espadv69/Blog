@@ -511,6 +511,27 @@ h2 {
     max-width: 900px;
     min-height: 100vh;
     display: grid;
+    grid-template-columns: repeat(4, 1fr); /*100% 1fr 1fr 1fr 1fr */
+    grid-template-areas: 
+    "firstEuropa secondEuropa thirdEuropa fourthEuropa"
+    ;
     gap: 20px;
+    grid-template-rows: 1fr;
+}
+
+.europa div:first-child {
+    grid-area: firstEuropa;
+}
+
+.europa div:nth-child(2) {
+    grid-area: secondEuropa;
+}
+
+.europa div:nth-child(3) {
+    grid-area: thirdEuropa;
+}
+
+.europa div:nth-child(4) {
+    grid-area: fourthEuropa;
 }
 /*************/
