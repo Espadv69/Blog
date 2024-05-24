@@ -161,7 +161,7 @@ h2 {
 /*************/
 
 /*MEDIA QUERIES*/
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .grid {
         grid-template-areas: 
         "aside"
