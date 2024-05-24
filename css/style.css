@@ -310,7 +310,7 @@ h2 {
     text-decoration: none;
     border-radius: .8rem;
     border: 2px solid whitesmoke;
-    background: linear-gradient(0deg, rgba(245, 245, 245, 0.4) 0%, rgba(245, 245, 245, 0.7) 100%);
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.2) 0%, rgba(245, 245, 245, 0.3) 100%);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transition: all 200ms linear;
 }
@@ -392,6 +392,7 @@ h2 {
 /*AFRICA GRID*/
 .africa {
     margin: auto;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 900px;
     min-height: 100vh;
@@ -400,7 +401,7 @@ h2 {
     "firstAfrica firstAfrica firstAfrica"
     "secondAfrica secondAfrica thirdAfrica"
     ;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: 300px auto;
     gap: 15px;
 }
@@ -413,13 +414,49 @@ h2 {
 
 .africa div:nth-child(1) img {
     width: 100%;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .africa div:nth-child(2) {
     grid-area: secondAfrica;
+    border: 2px solid white;
 }
 
 .africa div:nth-child(3) {
+    text-align: center;
     grid-area: thirdAfrica;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 10px solid whitesmoke;
+    background-color: rgba(245, 245, 245, 0.3);
+}
+
+.africa div:nth-child(3) p {
+    margin-top: 10px;
+}
+
+.africa div:nth-child(3) p span {
+    margin-bottom: 20px;
+    color: #FFD700;
 }
 /*************/
+
+/*MEDIA QUERIES*/
+@media (max-width: 800px) {
+    .africa {
+        grid-template-areas: 
+        "firstAfrica firstAfrica firstAfrica"
+        "secondAfrica secondAfrica secondAfrica"
+        "thirdAfrica thirdAfrica thirdAfrica"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px auto auto;
+    }
+    
+    .africa div:nth-child(1) img {
+        border-radius: 0;
+    }
+}
+/***************/
