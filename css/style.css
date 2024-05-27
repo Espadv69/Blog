@@ -516,7 +516,7 @@ h2 {
     "firstEuropa fourthEuropa fourthEuropa"
     ;
     gap: 20px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
 }
 
 .europa div:first-child {
@@ -527,14 +527,27 @@ h2 {
 
 .europa div:nth-child(2) {
     grid-area: secondEuropa;
-    border-top: 10px solid lightgreen;
-    background-color: rgba(144, 238, 144, 0.2);
+}
+
+.europa div:nth-child(2) img {
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .europa div:nth-child(3) {
     grid-area: thirdEuropa;
     border-top: 10px solid greenyellow;
     background-color: rgba(173, 255, 47, 0.2);
+}
+
+.europa div:nth-child(3) p {
+    margin: auto;
+    width: 85%;
+    padding: 1rem;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+
 }
 
 .europa div:nth-child(4) {
@@ -547,9 +560,16 @@ h2 {
 
 .europa div:nth-child(4) h3 {
     font-weight: bold;
-    color: rgb(205, 255, 130);
+    color: rgb(157, 255, 60);
     margin-bottom: 10px;
     text-decoration: underline;
     text-underline-offset: 6px;
+}
+
+.europa div:nth-child(4) p {
+    margin: auto;
+    width: 85%;
+    font-size: 14px;
+    color: rgb(216, 255, 157);
 }
 /*************/
